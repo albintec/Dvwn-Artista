@@ -1,0 +1,124 @@
+
+@media only screen and (max-width: 600px)  {
+    .navbar {
+      background-color: #000;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      align-items: center;
+       position: relative;
+       
+    }
+    .navbar .logo {
+      height: 60px;
+      width: 60px;
+      grid-column: 2 / 3;
+    }
+    .navbar .menu {
+      grid-column: 4 / 7;
+      display: flex;
+      
+    }
+    .navbar ul li {
+      margin-right: 3em;
+       list-style: none; 
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+    .navbar ul li a:hover {
+      color: #fff;
+    }
+     .navbar .menu-bar {
+      display: none;
+      position: fixed;
+      margin-left:400px;
+      
+    } 
+    .navbar .shop {
+      grid-column: 8 / 9;
+      justify-content: flex-end;
+    }
+    
+    .navbar .menu {
+      position: fixed;
+      width: 70%;
+      height: 57vh;
+      display: grid;
+      align-items: center;
+      background-color: #A13333;
+      transform: translateX(150%);
+      transition: all 1s;
+      margin-top: 34em;
+      z-index: 1;
+     
+    } 
+    .navbar .menu-toggle {
+      transform: translateX(45%);
+    }  
+     .navbar .shop {
+       display: none;
+     }
+     .navbar .shop_ {
+       display:inline;
+     }
+    .navbar .menu-bar {
+      display: block;
+    } 
+    .navbar .menu-bar .fas {
+      color: #fff;
+    }
+    .navbar .menu li {
+      list-style: none;
+      margin: 0 auto;
+    }  
+    .navbar .menu li a {
+      text-decoration: none;
+      color: #181818;
+      font-size: 1.2em;
+    } 
+    .navbar .menu-bar {
+      grid-column: 8 / 10;
+      color: #fff;
+      font-size: 2em;
+      cursor: pointer;
+      z-index: 1;
+    }  
+    .hero .info-content {
+      z-index: 0;
+      height: 500px;
+      grid-column: 2 / 9;
+      grid-row: 5 / 7;
+    }
+    .hero .info-content h1 {
+      font-size: 3.5em;
+    }
+    .hero .info-content h3 {
+      font-size: 1em;
+    }
+
+   
+    .radio-section {
+      grid-template-areas:
+      "listen-online social-network"
+    }
+    .radio-section h2 {
+      display: none;
+    }
+    .radio-section .social-network {
+      margin: 0 auto;
+    }
+    .radio-section .social-network .fab {
+      color: #fff;
+    }
+
+    .music .follow-me{
+        display: none;
+    }
+    .music .social-network{
+        text-align: center;
+        
+    }
+
+  }

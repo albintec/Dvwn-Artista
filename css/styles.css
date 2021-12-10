@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .fas {
+    font-size: 1.2em;
+  }
+
+  /*Estilos para la barra de navegación*/
+  .navbar {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+  
+  }
+  .navbar .logo {
+    height: 60px;
+    width: 60px;
+    grid-column: 2 / 3;
+  }
+  .navbar .menu {
+    grid-column: 4 / 7;
+    display: flex;
+  }
+  .navbar ul li {
+    margin-right: 3em;
+    list-style: none;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar ul li a:hover {
+    color: #A13333;
+  }
+  .navbar .menu-bar {
+    display: none;
+  }
+  .navbar .shop {
+    grid-column: 8 / 9;
+    justify-content: flex-end;
+    color: #A13333;
+  }
+  .navbar .shop:hover{
+      color: white;
+      cursor: pointer;
+  }
+
+  /*Estilos para la seccion principal*/
+  .hero {
+    height: 85vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .6), rgba(16, 16, 16, .7)) , url(../img/dvwn2.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    position: relative;
+  
+  }
+  .hero .btn {
+      font-size: 1em;
+      background: none;
+      color: #fff;
+      padding: 10px 20px;
+      border: 1px solid #A13333;
+      border-radius: 30px;
+      margin-top: 10px;
+      cursor: pointer;
+  }
+  .hero .btn:hover {
+      background: #A13333;
+      color: #ffff;
+  }
+
+  /*MAIN */
+  .hero .info-content {
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+    color: #fff;
+    z-index: 1;
+  }
+  .hero .info-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+  }
+  .hero .info-content h1 {
+    font-weight: 900;
+    font-size: 5em;
+    color: #A13333;
+  }
+  .hero .info-content p {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /*Sección de spotify*/
+
+  .music {
+     
+      display: grid;
+      height: 95px;
+      align-items: center;
+      background-color: #181818;
+      color: #fff;
+      grid-template-areas: "listen-online follow-me social-network";
+  }
+
+.music .listen-online {
+    grid-template-areas: listen-online;
+    display: flex;
+    justify-content: center;
+    background:#A13333;
+    padding: 26px;
+    color: #fff;
+}
+
+.music .listen-online .fas{
+    font-size: 1.5em;
+    margin-right: 15px;
+
+}
+
+.music .follow-ne {
+    grid-template-areas: follow-me;
+    text-align: center;
+}
+.music .social-network {
+    grid-template-areas: social-network;
+    font-size: 1.3em;
+    
+}
+
+.music .social-network .fab {
+    margin-right: 20px;
+    color:#A13333
+}
+.music .social-network .fab:hover {
+    color: #ffff;
+}
+
+/*Footer*/
+.piso {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    background-color: #000;
+    align-items: center;    
+    margin-top: -8px;
+}
+
+.piso .text-piso {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*Sección de galería*/
+.gallery {
+    margin-top: -8px;
+     background-color: #A13333;
+     padding: 70px 0;
+}
+.gallery img {
+    max-width: 100%;
+}
+
+/*icono de carrito de compras*/
+.ishop{
+    color: white;
+}
+
+
+.ishop:hover{
+    color: #A13333;
+}
+
+.shop_{
+  display:none;
+}
+
+/*Modificar estilo de los enlaces*/
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: #A13333;
+  
+}
+
+
+.link2 {
+  text-decoration: none;
+  color: white;
+}
+.link2:hover {
+  color: #fff;
+  text-decoration:#fff;
+}
+
+a:link{
+  text-decoration: #fff;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  font-size: 3.2em;
+}
+
+/*estilos de iconos fas*/
+.fas {
+  float: right;
+  margin-right: 20px;
+  font-size: 30px;
+}
